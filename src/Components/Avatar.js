@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Avatar = () => {
+const Avatar = (props) => {
     return (
         <div>
-            <span style={{ fontSize: 16, fontStyle: 'bold', marginRight: 15 }}>Yang Xiao Long</span>
-            <small>16 Out 2021 - 15:54</small>
+            <span 
+            style={{ fontSize: 16, fontStyle: 'bold', marginRight: 15 }}>
+                {props.author}
+            </span>
+            <small>{props.date}</small>
         </div>
 
     )
